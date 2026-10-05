@@ -1,0 +1,13 @@
+NB: corpus ripetuto -> val non indipendente (il modello memorizza)
+caratteri: 4500  vocabolario: 25  loss casuale attesa ln(V) = 3.219
+parametri: 156825
+step    0  train 3.076  val 3.088  (0s)
+step  300  train 0.132  val 0.133  (8s)
+step  600  train 0.084  val 0.087  (16s)
+step  900  train 0.076  val 0.073  (23s)
+step 1200  train 0.074  val 0.073  (31s)
+step 1499  train 0.069  val 0.071  (38s)
+
+--- testo generato ---
+il transformer usa l attenzione per far comunicare i token tra loro. ogni token guarda solo i token precedenti grazie alla maschera causale.
+il tokenizer trasforma il testo in numeri. l embedding trasforma i numeri 

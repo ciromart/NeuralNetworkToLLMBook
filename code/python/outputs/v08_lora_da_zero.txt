@@ -1,0 +1,8 @@
+parametri totali: 67840  allenabili (LoRA): 2048  = 3.02%
+step   0  loss 1.05658
+step 150  loss 0.00000
+step 300  loss 0.00000
+step 450  loss 0.00000
+step 600  loss 0.00000
+pesi base identici a prima del training? True
+errore dopo il merge: 9.446099369370131e-08

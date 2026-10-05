@@ -23,11 +23,14 @@ Libro/guida in italiano: recap della playlist **Neural Networks: Zero to Hero** 
 | A | [**Digressioni su Python**](book/A_digressioni_python.md) | — |
 | B | [Glossario](book/B_glossario.md) | — |
 
+## 📘 Dispensa unica
+**[`DISPENSA_COMPLETA.md`](DISPENSA_COMPLETA.md)** (e **[`DISPENSA_COMPLETA.pdf`](DISPENSA_COMPLETA.pdf)**, 96 pagine con diagrammi e figure): un solo documento con schede dei 10 video, teoria, **codice vero incluso dai file eseguiti con il loro output reale**, e tutto il progetto Spring AI. Si rigenera con `python3 scripts/build_dispensa.py` (poi `scripts/build_html_pdf.py` per il PDF).
+
 ## Dispensa video per video
 [`dispensa/`](dispensa/00_come_usare.md): una scheda per ognuno dei 10 video con **timestamp ufficiali dei capitoli**, spiegazioni in italiano, formule, trappole, esercizi e quiz. *Non è una trascrizione* (vedi la nota iniziale della dispensa).
 
 ## Codice
-- `code/python/` — micrograd, bigramma, attention, BPE, sampling, mini-RAG, client Ollama (`python3 file.py`; solo `attention.py` richiede NumPy).
+- `code/python/` — micrograd, bigramma, attention, BPE, sampling, mini-RAG, client Ollama + esempi PyTorch (`v01_gradcheck`, `v03_mlp_nomi`, `v04_init_batchnorm`, `v07_mini_gpt`, `v08_lora_da_zero`). Output reali in `code/python/outputs/`. Richiedono `pip install numpy torch`.
 - `code/spring-ai-demo/` — Spring Boot 4.1.1 + Spring AI 2.0.1 + Java 21: `mvn test` · `mvn spring-boot:run` (serve Ollama: `docker compose up -d`).
 - `scripts/make_figures.py` — rigenera le 18 figure in `book/figures/` (`pip install matplotlib numpy`).
 

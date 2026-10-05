@@ -26,20 +26,21 @@ Il testo che hai incollato dice «il corso di Spring che hai visto con Ollama».
 ## 0.2 Mappa del libro
 
 ```mermaid
-flowchart LR
-    A[1 Neurone e backprop] --> B[2 Language model bigramma]
-    B --> C[3 MLP + embedding]
-    C --> D[4 Training sano: attivazioni, BatchNorm]
-    D --> E[5 Transformer / GPT]
-    E --> F[6 Tokenizer BPE]
-    F --> G[7 Pretraining → SFT → RLHF]
-    G --> H[8 LLM locale: 3 strade]
-    H --> I[9 Installare Spring AI]
-    I --> J[10 Fondamenti per gestire un LLM]
-    J --> K[11 Chat, streaming, structured output]
-    K --> L[12 RAG]
-    L --> M[13 Tool calling + API REST]
-    M --> N[14 Best practice enterprise]
+flowchart TB
+    subgraph B["Basi (video 1-6)"]
+        direction LR
+        A[1 Neurone e backprop] --> B2[2 Bigramma] --> C[3 MLP + embedding] --> D[4 Training sano]
+    end
+    subgraph G["Dai Transformer ai LLM (video 7-10)"]
+        direction LR
+        E[5 Transformer / GPT] --> F[6 Tokenizer BPE] --> G2[7 Pretraining, SFT, RLHF]
+    end
+    subgraph S["LLM locale e Spring AI"]
+        direction LR
+        H[8 LLM locale] --> I[9 Installare Spring AI] --> J[10 Fondamenti] --> K[11 Chat e streaming]
+        K --> L[12 RAG] --> M[13 Tool calling REST] --> N[14 Best practice]
+    end
+    B --> G --> S
 ```
 
 ## 0.3 Le tre strade per "avere un LLM locale"

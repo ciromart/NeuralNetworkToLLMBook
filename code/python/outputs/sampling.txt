@@ -1,0 +1,5 @@
+{'temperature': 0} {'il': 1.0, 'un': 0.0, 'lo': 0.0, 'la': 0.0, 'gli': 0.0}
+{'temperature': 1.0} {'il': 0.55, 'un': 0.21, 'lo': 0.13, 'la': 0.08, 'gli': 0.03}
+{'temperature': 1.0, 'top_k': 2} {'il': 0.74, 'un': 0.26, 'lo': 0.0, 'la': 0.0, 'gli': 0.0}
+{'temperature': 1.0, 'top_p': 0.8} {'il': 0.62, 'un': 0.24, 'lo': 0.14, 'la': 0.0, 'gli': 0.0}
+{'temperature': 2.0} {'il': 0.38, 'un': 0.22, 'lo': 0.18, 'la': 0.14, 'gli': 0.09}

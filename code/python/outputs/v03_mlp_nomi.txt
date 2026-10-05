@@ -1,0 +1,12 @@
+nomi: 105  vocabolario: 21  esempi train/dev/test: 649/69/76
+loss attesa di un modello casuale: ln(21) = 3.045
+parametri: 1125
+step     0  train 3.032  dev 3.021
+step  1000  train 1.836  dev 2.241
+step  2000  train 1.525  dev 2.341   <- overfitting: dev risale
+step  3000  train 1.304  dev 2.423   <- overfitting: dev risale
+step  4000  train 1.183  dev 2.483   <- overfitting: dev risale
+step  5000  train 1.163  dev 2.505   <- overfitting: dev risale
+step  5999  train 1.149  dev 2.507   <- overfitting: dev risale
+miglior dev: 2.224  |  loss test finale: 2.090  (casuale: 3.045)
+nomi generati: ['slla', 'ufiamine', 're', 'gpiga', 'gianueolavleslan', 'rora', 'tdetlnaa', 'hiode', 'cca', 'vido']

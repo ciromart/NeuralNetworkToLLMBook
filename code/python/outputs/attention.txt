@@ -1,0 +1,7 @@
+pesi di attenzione (triangolare inferiore):
+ [[1.   0.   0.   0.   0.  ]
+ [1.   0.   0.   0.   0.  ]
+ [0.81 0.19 0.   0.   0.  ]
+ [0.   0.01 0.98 0.01 0.  ]
+ [0.   0.45 0.04 0.51 0.  ]]
+somma righe: [1. 1. 1. 1. 1.]  output shape: (5, 4)

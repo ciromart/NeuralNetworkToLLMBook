@@ -1,0 +1,8 @@
+risultati: [(0.47, 'trasferta'), (0.39, 'ferie')]
+
+--- PROMPT AUMENTATO ---
+Rispondi SOLO usando il contesto.
+Contesto:
+Le spese di trasferta si rimborsano entro 30 giorni allegando le ricevute nel portale spese.
+
+Domanda: Entro quanti giorni devo chiedere le ferie?

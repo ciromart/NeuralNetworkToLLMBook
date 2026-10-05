@@ -1,0 +1,6 @@
+           micrograd       torch    numerico
+d/da       -0.625794   -0.625794   -0.625794
+d/db        1.090812    1.090812    1.090812
+d/dc        1.558303    1.558303    1.558303
+OK: i tre metodi coincidono
+dlogits autograd == p - onehot ? True

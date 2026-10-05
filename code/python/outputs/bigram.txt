@@ -1,0 +1,2 @@
+NLL media (loss): 1.305
+generati: ['sa', 'er', 'ca', 'ela', 'ela', 'ililyn']

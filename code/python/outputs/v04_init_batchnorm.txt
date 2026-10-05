@@ -1,0 +1,36 @@
+
+troppo piccola (0.01)
+  strato   std attivazioni   % saturi (|tanh|>0.97)
+    1           0.099           0.0    
+    2           0.010           0.0    
+    3           0.001           0.0    
+    4           0.000           0.0    
+    5           0.000           0.0    
+    6           0.000           0.0    
+
+troppo grande (1.0)
+  strato   std attivazioni   % saturi (|tanh|>0.97)
+    1           0.959           83.5   
+    2           0.958           82.7   
+    3           0.957           82.5   
+    4           0.957           82.7   
+    5           0.958           82.9   
+    6           0.958           82.9   
+
+Kaiming (5/3)/sqrt(fan_in)
+  strato   std attivazioni   % saturi (|tanh|>0.97)
+    1           0.758           20.8   
+    2           0.690           9.4    
+    3           0.666           6.8    
+    4           0.656           5.9    
+    5           0.649           5.3    
+    6           0.647           5.2    
+
+pesi grandi + BatchNorm
+  strato   std attivazioni   % saturi (|tanh|>0.97)
+    1           0.628           3.6    
+    2           0.629           3.6    
+    3           0.631           3.5    
+    4           0.632           3.4    
+    5           0.632           3.4    
+    6           0.632           3.4    

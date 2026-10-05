@@ -1,0 +1,15 @@
+services:
+  ollama:
+    image: ollama/ollama
+    container_name: ollama
+    ports: ["11434:11434"]
+    volumes: ["ollama:/root/.ollama"]
+    # GPU NVIDIA: decommenta
+    # deploy: { resources: { reservations: { devices: [{ driver: nvidia, count: all, capabilities: [gpu] }] } } }
+  pgvector:
+    image: pgvector/pgvector:pg17
+    container_name: pgvector
+    environment: { POSTGRES_DB: rag, POSTGRES_USER: rag, POSTGRES_PASSWORD: rag }
+    ports: ["5432:5432"]
+volumes:
+  ollama:

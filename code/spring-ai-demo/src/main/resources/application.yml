@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: llmbook-demo
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: llama3.2        # ollama pull llama3.2
+          temperature: 0.3
+          num-ctx: 4096          # finestra di contesto richiesta a Ollama
+      embedding:
+        options:
+          model: nomic-embed-text  # ollama pull nomic-embed-text
+      init:
+        pull-model-strategy: when_missing   # scarica il modello se manca
+    chat:
+      memory:
+        repository:
+          jdbc:
+            initialize-schema: never
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,prometheus
+
+app:
+  catalog:
+    base-url: http://localhost:8081   # servizio REST esterno (cap. 14)
+    timeout: 3s

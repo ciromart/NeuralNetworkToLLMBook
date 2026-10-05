@@ -23,6 +23,9 @@ Libro/guida in italiano: recap della playlist **Neural Networks: Zero to Hero** 
 | A | [**Digressioni su Python**](book/A_digressioni_python.md) | — |
 | B | [Glossario](book/B_glossario.md) | — |
 
+## Dispensa video per video
+[`dispensa/`](dispensa/00_come_usare.md): una scheda per ognuno dei 10 video con **timestamp ufficiali dei capitoli**, spiegazioni in italiano, formule, trappole, esercizi e quiz. *Non è una trascrizione* (vedi la nota iniziale della dispensa).
+
 ## Codice
 - `code/python/` — micrograd, bigramma, attention, BPE, sampling, mini-RAG, client Ollama (`python3 file.py`; solo `attention.py` richiede NumPy).
 - `code/spring-ai-demo/` — Spring Boot 4.1.1 + Spring AI 2.0.1 + Java 21: `mvn test` · `mvn spring-boot:run` (serve Ollama: `docker compose up -d`).
